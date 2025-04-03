@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Kitter - Paws & Whiskers</title>
+  <meta name="title" content="Kitter - Hight Quality Pet Food">
+  <meta name="description" content="This is an eCommerce html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style1.css">
+  <style>
+    .navbar-item.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #252b41;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-menu li {
+    padding: 12px 16px;
+  }
+  
+  .dropdown-menu a {
+    color: rgb(239, 229, 229);
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navbar-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  </style>
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+      </button>
+
+      <a href="Enterpage.html" class="logo">Kitter</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="MainHome.html" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="cart.html" class="navbar-link" data-nav-link>Online Cart</a>
+        </li>
+
+        <li class="navbar-item dropdown">
+            <a href="Products.html" class="navbar-link" data-nav-link>Products</a>
+            <ul class="dropdown-menu">
+                <li><a href="Foods.html" class="dropdown-link">Foods</a></li>
+                <li><a href="Cages.html" class="dropdown-link">Cages</a></li>
+                <li><a href="Toys.html" class="dropdown-link">Toys</a></li>
+                <li><a href="Leash.html" class="dropdown-link">Leash</a></li>
+                <li><a href="Supplement.html" class="dropdown-link">Supplements</a></li>
+                <li><a href="Beddings.html" class="dropdown-link">Beddings</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar-item dropdown">
+            <a href="Services.html" class="navbar-link" data-nav-link>Services</a>
+            <ul class="dropdown-menu">
+                <li><a href="OffersCats.html" class="dropdown-link">Cats</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar-item dropdown">
+            <a href="Adopt.html" class="navbar-link" data-nav-link>Adopt</a>
+            <ul class="dropdown-menu">
+                <li><a href="TypesofDogs.html" class="dropdown-link">Dogs</a></li>
+                <li><a href="TypesofCats.html" class="dropdown-link">Cats</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar-item dropdown">
+            <a href="Aboutus.html" class="navbar-link" data-nav-link>About Us</a>
+            <ul class="dropdown-menu">
+                <li><a href="Address.html" class="dropdown-link">Address</a></li>
+                <li><a href="ContactUs.html" class="dropdown-link">Contact Numbers</a></li>
+                <li><a href="Members.html" class="dropdown-link">Members</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <a href="#" class="navbar-action-btn">Log In</a>
+      </nav>
+      
+
+      <div class="header-actions">
+
+        <button class="action-btn" aria-label="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="action-btn user" aria-label="User">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="action-btn" aria-label="cart">
+          <a href="cart.html"><ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon></a>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/5.jpg')">
+        <div class="container">
+
+          <h1 class="h1 hero-title">
+            <span class="span">Services for</span> Dogs
+          </h1>
+<br>
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #OFFERS
+      -->
+
+      <section class="section offer" aria-label="offer">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./assets/images/offer-banner-1.jpg'); --width: 540; --height: 374;">
+
+                <p class="card-subtitle">Selected Our Best Seller Products</p>
+
+                <h3 class="h3 card-title">
+                  Hot Summer <span class="span">Deals</span>
+                </h3>
+
+                <a href="#" class="btn">Visit Now!</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./assets/images/offer-banner-2.jpg'); --width: 540; --height: 374;">
+
+                <p class="card-subtitle">Services That We Offers</p>
+
+                <h3 class="h3 card-title">
+                  Spoil your Pets With<span class="span">love</span>
+                </h3>
+
+                <a href="#" class="btn">Visit Now!</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./assets/images/offer-banner-3.jpg'); --width: 540; --height: 374;">
+
+                <p class="card-subtitle">Contact Us</p>
+
+                <h3 class="h3 card-title">
+                  For New Items This<span class="span">year</span>
+                </h3>
+
+                <a href="#" class="btn">Visit Now!</a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product" id="shop" aria-label="product">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Top Services That We Offers</span> For Dogs
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="product-card">
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/se1.jpg" width="460" height="400" loading="lazy"
+                    alt="Commodo leo sed porta" class="img-cover default">
+                  <img src="./assets/images/se1.jpg" width="460" height="400" loading="lazy"
+                    alt="Commodo leo sed porta" class="img-cover hover">
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+                <div class="card-content">
+                  <div class="wrapper">
+                    <div class="rating-wrapper">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                  </div>
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Veterinary Consultation (General Check-Up)</a>
+                    </h5>A standard veterinary consultation includes a thorough physical examination, discussion of your dog’s health, and recommendations for diet, vaccinations, or further diagnostics. The vet will check your dog’s weight, heart rate, teeth, coat condition, and overall wellness. Follow-up visits may be required for chronic conditions.</h5>
+                  </h3>
+                  <br>
+                  <br>
+                  <data class="card-price" value="15">Price:50–100 per visit</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+                <div class="product-card">
+                  <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                    <img src="./assets/images/see1.jpg" width="460" height="400" loading="lazy"
+                      alt="Commodo leo sed porta" class="img-cover default">
+                    <img src="./assets/images/see1.jpg" width="460" height="400" loading="lazy"
+                      alt="Commodo leo sed porta" class="img-cover hover">
+                    <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                      <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <div class="rating-wrapper">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+                    </div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title"> Vaccinations (Core & Non-Core Vaccines)</a>
+                      </h5>Vaccinations protect dogs from life-threatening diseases. Core vaccines are legally required, while non-core vaccines depend on lifestyle (e.g., boarding, hiking). Puppies need a series of shots, and adults require boosters every 1–3 years.</h5>
+                    </h3>
+                    <br>
+                    <br>
+                    <data class="card-price" value="15">Price: Core Vaccines (Rabies, Distemper, Parvovirus, Adenovirus): 20–40 per shot Non-Core Vaccines (Bordetella, Leptospirosis, Lyme): 25–50 per shot</data>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="product-card">
+                  <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                    <img src="./assets/images/se2.jpg" width="460" height="400" loading="lazy"
+                      alt="Commodo leo sed porta" class="img-cover default">
+                    <img src="./assets/images/se2.jpg" width="460" height="400" loading="lazy"
+                      alt="Commodo leo sed porta" class="img-cover hover">
+                    <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                      <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <div class="rating-wrapper">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+                    </div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Full Grooming (Bath, Haircut, Brushing, Ear Cleaning)</a>
+                      </h5>A full grooming session includes a bath with dog-friendly shampoo, blow-drying, brushing to remove tangles, nail trimming, ear cleaning, and a breed-specific haircut (if needed). Helps maintain coat health, reduce shedding, and prevent skin infections.</h5>
+                    </h3>
+                    <br>
+                    <br>
+                    <data class="card-price" value="15">Price: 50–120 (varies by breed & coat type)</data>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="product-card">
+                  <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                    <img src="./assets/images/see2.jpg" width="460" height="400" loading="lazy"
+                      alt="Commodo leo sed porta" class="img-cover default">
+                    <img src="./assets/images/see2.jpg" width="460" height="400" loading="lazy"
+                      alt="Commodo leo sed porta" class="img-cover hover">
+                    <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                      <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <div class="rating-wrapper">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+                    </div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Nail Trimming</a>
+                      </h5>Overgrown nails can cause pain and posture issues. A professional trim ensures nails are cut safely without hitting the quick (blood vessel). Some groomers offer grinding for smoother edges.</h5>
+                    </h3>
+                    <br>
+                    <br>
+                    <data class="card-price" value="15">Price:10–25</data>
+                  </div>
+                </div>
+              </li>
+          </ul>
+        </div>
+        <br><br>
+        <div class="container">
+
+            <ul class="grid-list">
+  
+              <li>
+                  <div class="product-card">
+                    <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                      <img src="./assets/images/se3.jpg" width="460" height="400" loading="lazy"
+                        alt="Commodo leo sed porta" class="img-cover default">
+                      <img src="./assets/images/se3.jpg" width="460" height="400" loading="lazy"
+                        alt="Commodo leo sed porta" class="img-cover hover">
+                      <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                        <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </div>
+                    <div class="card-content">
+                      <div class="wrapper">
+                        <div class="rating-wrapper">
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        </div>
+                        <span class="span">(220)</span>
+                      </div>
+                      <h3 class="h3">
+                        <a href="#" class="card-title">  X-Ray (Radiography)</a>
+                        </h5>X-rays help diagnose fractures, tumors, lung/heart conditions, or foreign object ingestion. May require sedation for anxious dogs. Additional fees apply for interpretation by a radiologist.</h5>
+                      </h3>
+                      <br>
+                      <br>
+                      <data class="card-price" value="15">Price:150–400 per session</data>
+                    </div>
+                  </div>
+                </li>
+  
+                <li>
+                  <div class="product-card">
+                    <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                      <img src="./assets/images/se4.jpg" width="460" height="400" loading="lazy"
+                        alt="Commodo leo sed porta" class="img-cover default">
+                      <img src="./assets/images/se4.jpg" width="460" height="400" loading="lazy"
+                        alt="Commodo leo sed porta" class="img-cover hover">
+                      <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                        <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </div>
+                    <div class="card-content">
+                      <div class="wrapper">
+                        <div class="rating-wrapper">
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        </div>
+                      </div>
+                      <h3 class="h3">
+                        <a href="#" class="card-title"> Euthanasia (In-Clinic or At-Home)</a>
+                        </h5> A humane and painless procedure performed by a vet when a dog’s quality of life declines. Includes sedation, final moments with the owner, and peaceful passing. Some vets offer paw prints or fur clippings as keepsakes.</h5>
+                      </h3>
+                      <br>
+                      <br>
+                      <data class="card-price" value="15">In-Clinic: 100–300 At-Home: 200 –500 (more for travel & comfort care)</data>
+                    </div>
+                  </div>
+                </li>
+  
+                <li>
+                  <div class="product-card">
+                    <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                      <img src="./assets/images/se5.jpg" width="460" height="400" loading="lazy"
+                        alt="Commodo leo sed porta" class="img-cover default">
+                      <img src="./assets/images/se5.jpg" width="460" height="400" loading="lazy"
+                        alt="Commodo leo sed porta" class="img-cover hover">
+                      <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                        <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </div>
+                    <div class="card-content">
+                      <div class="wrapper">
+                        <div class="rating-wrapper">
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                          <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        </div>
+                      </div>
+                      <h3 class="h3">
+                        <a href="#" class="card-title">Cremation (Private or Communal)</a>
+                        </h5> After euthanasia, owners can choose cremation. Private cremation ensures only your dog’s ashes are returned, often in a decorative urn or memorial box. Some clinics offer grief counseling referrals.</h5>
+                      </h3>
+                      <br>
+                      <br>
+                      <data class="card-price" value="15">Communal Cremation:  50–150 (ashes not returned) Private Cremation: 150–400 (ashes returned in an urn)</data>
+                    </div>
+                  </div>
+                </li>
+
+                
+                <li>
+                    <div class="product-card">
+                      <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                        <img src="./assets/images/se13.jpg" width="460" height="400" loading="lazy"
+                          alt="Commodo leo sed porta" class="img-cover default">
+                        <img src="./assets/images/se13.jpg" width="460" height="400" loading="lazy"
+                          alt="Commodo leo sed porta" class="img-cover hover">
+                        <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                          <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="card-content">
+                        <div class="wrapper">
+                          <div class="rating-wrapper">
+                            <ion-icon name="star" aria-hidden="true"></ion-icon>
+                            <ion-icon name="star" aria-hidden="true"></ion-icon>
+                            <ion-icon name="star" aria-hidden="true"></ion-icon>
+                            <ion-icon name="star" aria-hidden="true"></ion-icon>
+                            <ion-icon name="star" aria-hidden="true"></ion-icon>
+                          </div>
+                        </div>
+                        <h3 class="h3">
+                          <a href="#" class="card-title">Emergency Triage & Treatment</a>
+                          </h5> Urinary blockages (common in male cats),Trauma (falls, car accidents) Poisoning (lilies, human medications) Respiratory distress Severe vomiting/diarrhea After-hours fees typically 1.5-2x normal rates. Includes IV fluids, pain management, and stabilization before diagnostics.</h5>
+                        </h3>
+                        <br>
+                        <br>
+                        <data class="card-price" value="15">Price:150−350 (plus treatment costs)</data>
+                      </div>
+                    </div>
+                  </li>
+            </ul>
+          </div>
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta has-bg-image" aria-label="cta" style="background-image: url('./assets/images/6.jpg')">
+        <div class="container">
+
+          <figure class="cta-banner">
+            <img src="./assets/images/.png" width="900" height="660" loading="lazy" alt="cat" class="w-100">
+          </figure>
+
+          <div class="cta-content">
+
+            <img src="./assets/images/cta-icon.png" width="120" height="35" loading="lazy" alt="taste guarantee"
+              class="img">
+
+            <h2 class="h2 section-title">Best-Selling Beddings for Cats!</h2>
+
+            <p class="section-text">
+              Keeping your feline friend cozy and comfortable starts with the right bed. Here are some of the best-selling and vet-recommended cat beddings, loved for their plush materials, warmth, and orthopedic support.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

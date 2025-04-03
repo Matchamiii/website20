@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kitter - Paws & Whiskers</title>
+    <meta name="title" content="Kitter - Hight Quality Pet Food">
+    <meta name="description" content="This is an eCommerce html template made by codewithsadee">
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="./assets/css/style1.css">
+    <style>
+        .landscape-box {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #252b41;
+            border: 1px solid #252b41;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .landscape-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .landscape-box p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #faf6f6;
+        }
+
+        .landscape-box h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #faf6f6;
+        }
+
+        /* Netflix-style carousel */
+        .netflix-carousel {
+            overflow: hidden; /* Hide overflow */
+            white-space: nowrap;
+            padding: 20px 0;
+            margin: 20px auto;
+            max-width: 90%;
+            position: relative;
+        }
+
+        .netflix-carousel-inner {
+            display: inline-flex; /* Use flexbox for horizontal layout */
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .netflix-carousel img {
+            width: 250px; /* Adjust image width */
+            height: auto;
+            display: inline-block;
+            margin: 0 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            flex-shrink: 0; /* Prevent images from shrinking */
+        }
+
+        .netflix-carousel img:hover {
+            transform: scale(1.1);
+        }
+
+        .navbar-item.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #252b41;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-menu li {
+    padding: 12px 16px;
+  }
+  
+  .dropdown-menu a {
+    color: rgb(239, 229, 229);
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navbar-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+</head>
+
+<body id="top">
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+            </button>
+
+            <a href="Enterpage.html" class="logo">Kitter</a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="MainHome.html" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="cart.html" class="navbar-link" data-nav-link>Online Cart</a>
+                      </li>
+
+                    <li class="navbar-item dropdown">
+                        <a href="Products.html" class="navbar-link" data-nav-link>Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Foods.html" class="dropdown-link">Foods</a></li>
+                            <li><a href="Cages.html" class="dropdown-link">Cages</a></li>
+                            <li><a href="Toys.html" class="dropdown-link">Toys</a></li>
+                            <li><a href="Leash.html" class="dropdown-link">Leash</a></li>
+                            <li><a href="Supplement.html" class="dropdown-link">Supplements</a></li>
+                            <li><a href="Beddings.html" class="dropdown-link">Beddings</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="navbar-item dropdown">
+                        <a href="Services.html" class="navbar-link" data-nav-link>Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="OffersDogs.html" class="dropdown-link">Dogs</a></li>
+                            <li><a href="OffersCats.html" class="dropdown-link">Cats</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="navbar-item dropdown">
+                        <a href="Adopt.html" class="navbar-link" data-nav-link>Adopt</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="TypesofDogs.html" class="dropdown-link">Dogs</a></li>
+                            <li><a href="TypesofCats.html" class="dropdown-link">Cats</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="navbar-item dropdown">
+                        <a href="Aboutus.html" class="navbar-link" data-nav-link>About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Address.html" class="dropdown-link">Address</a></li>
+                            <li><a href="ContactUs.html" class="dropdown-link">Contact Numbers</a></li>
+                            <li><a href="Members.html" class="dropdown-link">Members</a></li>
+                        </ul>
+                      </li>
+
+                </ul>
+
+                <a href="#" class="navbar-action-btn">Log In</a>
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="action-btn" aria-label="Search">
+                    <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="action-btn user" aria-label="User">
+                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="action-btn" aria-label="cart">
+                    <a href="cart.html"><ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon></a>
+
+                    <span class="btn-badge">0</span>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <article>
+
+            <section class="section hero has-bg-image" id="home" aria-label="home" style="background-image: url('./assets/images/5.jpg')">
+                <div class="container">
+
+                    <h1 class="h1 hero-title">
+                        <span class="span"></span>Services
+                    </h1>
+                    <br>
+                </div>
+            </section>
+
+            
+
+            <div class="landscape-box">
+                <h2>"Complete Pet Care Services: Wellness, Grooming & Emergency Support at Paws & Whiskers"</h2>
+                <p>
+                    At Paws & Whiskers, we're proud to offer a complete range of professional pet care services designed to keep your furry family members healthy, happy, and thriving at every stage of their lives. Our full-service veterinary clinic provides comprehensive medical care including wellness exams, vaccinations, and advanced diagnostics like digital x-rays - all performed by our compassionate team of animal health professionals who take the time to understand your pet's unique needs. For your pet's comfort and hygiene, our expert grooming salon offers everything from basic nail trims to full-service spa packages featuring breed-specific haircuts, soothing baths with premium products, and specialized treatments for skin conditions. We know emergencies don't wait for business hours, which is why we provide urgent care services with state-of-the-art equipment to handle critical situations when every second counts. For senior pets or those facing serious health challenges, our gentle end-of-life care services provide comfort and dignity, including in-home euthanasia options and beautiful memorial keepsakes to honor your companion's memory. What truly sets us apart is our holistic approach - we don't just treat symptoms, but consider your pet's overall wellbeing, offering nutritional counseling, behavioral advice, and preventive care plans tailored to your pet's age, breed and lifestyle. From that first playful puppy or kitten visit through their golden years, we're here to be your trusted partner in pet care, combining cutting-edge medicine with old-fashioned compassion in our warm, welcoming clinic designed to make every visit as stress-free as possible for both pets and their people.
+                </p>
+            </div>
+
+            <div class="netflix-carousel">
+                <div class="netflix-carousel-inner">
+                    <img src="./assets/images/se1.jpg" alt="Cat 1">
+                    <img src="./assets/images/see1.jpg" alt="Dog 1">
+                    <img src="./assets/images/se2.jpg" alt="Cat 2">
+                    <img src="./assets/images/see2.jpg" alt="Dog 2">
+                    <img src="./assets/images/se3.jpg" alt="Dog 2">
+                    <img src="./assets/images/se4.jpg" alt="Cat 3">
+                    <img src="./assets/images/se5.jpg" alt="Dog 3">
+                    <img src="./assets/images/se6.jpg" alt="Cat 4">
+                    <img src="./assets/images/se7.jpg" alt="Dog 4">
+                    <img src="./assets/images/se8.jpg" alt="Dog 4">
+                </div>
+            </div>
+            
+
+
+
+
+            <section class="cta has-bg-image" aria-label="cta" style="background-image: url('./assets/images/6.jpg')">
+                <div class="container">
+
+                    <figure class="cta-banner">
+                        <img src="./assets/images/.png" width="900" height="660" loading="lazy" alt="cat" class="w-100">
+                    </figure>
+
+                    <div class="cta-content">
+
+                        <img src="./assets/images/cta-icon.png" width="120" height="35" loading="lazy" alt="taste guarantee" class="img">
+
+                        <h2 class="h2 section-title">Premium Pet Products & Professional Care Services</h2>
+
+                        <p class="section-text">
+                            At Paws & Whiskers, we offer top-quality pet supplies including nutritious foods, comfortable bedding, stimulating toys, and essential health products, all carefully selected for your pet's wellbeing. Alongside our premium products, we provide complete veterinary and grooming services - from routine checkups and vaccinations to emergency care and professional styling - ensuring your furry friends look and feel their best.
+
+                            (Your one-stop destination for exceptional pet care and premium supplies!) 🐾
+                        </p>
+                    </div>
+
+
+                    
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+            <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+        </a>
+    </footer>
+
+    <script src="./assets/js/script.js" defer></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        const carouselInner = document.querySelector('.netflix-carousel-inner');
+        const carouselImages = document.querySelectorAll('.netflix-carousel img');
+        let imageWidth = carouselImages[0].offsetWidth + 20; // Include margin
+        let currentIndex = 0;
+
+        function scrollCarousel() {
+            currentIndex = (currentIndex + 1) % carouselImages.length;
+            carouselInner.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+        }
+
+        setInterval(scrollCarousel, 3000); // Change image every 3 seconds
+    </script>
+
+</body>
+
+</html>

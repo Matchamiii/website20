@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Kitter - Paws & Whiskers</title>
+  <meta name="title" content="Kitter - Paws & Whiskers">
+  <meta name="description" content="This is an eCommerce html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    .navbar-item.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #725e48;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-menu li {
+    padding: 12px 16px;
+  }
+  
+  .dropdown-menu a {
+    color: rgb(239, 229, 229);
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navbar-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  </style>
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+</head>
+
+<body id="top">
+
+   <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+      </button>
+
+      <a href="Enterpage.html" class="logo">Kitter</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="MainHome.html" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="cart.html" class="navbar-link" data-nav-link>Online Cart</a>
+        </li>
+
+        <li class="navbar-item dropdown">
+            <a href="Products.html" class="navbar-link" data-nav-link>Products</a>
+            <ul class="dropdown-menu">
+                <li><a href="Foods.html" class="dropdown-link">Foods</a></li>
+                <li><a href="Cages.html" class="dropdown-link">Cages</a></li>
+                <li><a href="Toys.html" class="dropdown-link">Toys</a></li>
+                <li><a href="Leash.html" class="dropdown-link">Leash</a></li>
+                <li><a href="Supplement.html" class="dropdown-link">Supplements</a></li>
+                <li><a href="Beddings.html" class="dropdown-link">Beddings</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar-item dropdown">
+            <a href="Services.html" class="navbar-link" data-nav-link>Services</a>
+            <ul class="dropdown-menu">
+                <li><a href="OffersDogs.html" class="dropdown-link">Dogs</a></li>
+                <li><a href="OffersCats.html" class="dropdown-link">Cats</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar-item dropdown">
+            <a href="Adopt.html" class="navbar-link" data-nav-link>Adopt</a>
+            <ul class="dropdown-menu">
+                <li><a href="TypesofCats.html" class="dropdown-link">Cats</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar-item dropdown">
+            <a href="Aboutus.html" class="navbar-link" data-nav-link>About Us</a>
+            <ul class="dropdown-menu">
+                <li><a href="Address.html" class="dropdown-link">Address</a></li>
+                <li><a href="ContactUs.html" class="dropdown-link">Contact Numbers</a></li>
+                <li><a href="Members.html" class="dropdown-link">Members</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <a href="#" class="navbar-action-btn">Log In</a>
+      </nav>
+      
+
+      <div class="header-actions">
+
+        <button class="action-btn" aria-label="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="action-btn user" aria-label="User">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="action-btn" aria-label="cart">
+          <a href="cart.html"><ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon></a>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/3.jpg')">
+        <div class="container">
+
+          <h1 class="h1 hero-title">
+            <span class="span">Types of </span> Dogs
+          </h1>
+
+          <p class="hero-text">What are you waiting for?</p>
+
+          <a href="#" class="btn">Adopt Now!</a>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">The Top Categories of </span>Comprehensive Dog Breeds
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog1.webp" width="330" height="300" loading="lazy" alt="Cat Food"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">The Retrievers</a>
+                  <br>
+                  <p> The same canine traits that once put dinner on the table have been well adapted for breeding a steadfast companion, or a dog capable of “hunting” first place on an agility course. </p>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog2.jpg" width="330" height="300" loading="lazy" alt="Cat Toys"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">The Setters</a>
+                  <br>
+                  <br>
+                  <p>This behavior makes it easy to safely hunt around him, as his fixed position wouldn’t entangle the nets thrown over him, or the guns fired around him. </p>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog3.webp" width="330" height="300" loading="lazy" alt="Dog Food"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">The Pointers</a>
+                  <br>
+                  <p>The effect is that he is using his body to “point” to the exact spot he sees, scents, or hears prey, allowing his human companion to efficiently flush it out or dispatch it. </p>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog4.webp" width="330" height="300" loading="lazy" alt="Dog Toys"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">The Spaniels</a>
+                  <br>
+                  <p>Tenacious and intelligent, a Spaniel is very likely to have a strong personality and attitude, making him a pleasure to spend time with and, potentially, a bit of a challenge to train. </p>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog6.webp" width="330" height="300" loading="lazy"
+                    alt="Dog Sumpplements" class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">The Dalmatians</a>
+                  <br>
+                  <p>The Dalmatian is a breed of dog with a white coat marked with dark-coloured spots. Originally bred as a hunting dog,it was also used as a carriage dog in its early days.</p>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #CATEGORY 2
+      -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">The Top Categories of</span> Hybrid Designer Dog Breeds
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog7.webp" width="330" height="300" loading="lazy" alt="Cat Food"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">American Corgi </a>
+                  <br>
+                  <p>With the same muscular low-rider body, short legs, and giant bat ears as their Corgi parents, an American Corgi for sale shares a similar active, fun, and energetic personality.</p>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog8.webp" width="330" height="300" loading="lazy" alt="Cat Toys"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Auggie</a>
+                  <br>
+                  <p> They inherit the adorable, comical long body low to the ground and large bat-like ears of a Pembroke Welsh Corgi and the energy and longer fur of an Australian Shepherd.</p>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog9.webp" width="330" height="300" loading="lazy" alt="Dog Food"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Beaglier </a>
+                  <br>
+                  <br>
+                  <p>Energetic and loyal, a Beaglier is a medium-sized dog that is highly adaptable to singles and families and does well living in apartments to larger homes.</p>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog10.webp" width="330" height="300" loading="lazy" alt="Dog Toys"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Cavachon </a>
+                  <br>
+                  <br>
+                  <br>
+                  <p>They are easy to train and love making friends with children and other dogs. Because of how all-around easy they are to raise.</p>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog11.webp" width="330" height="300" loading="lazy"
+                    alt="Dog Sumpplements" class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Chorkie </a>
+                  <br>
+                  <br>
+                  <br>
+                  <p>Both breeds are high energy and think they are actually big dogs, so a Chorkie puppy will have no issues in the confidence department. </p>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+                <div class="category-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/Dog12.webp" width="330" height="300" loading="lazy"
+                      alt="Dog Sumpplements" class="img-cover">
+                  </figure>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Cockalier</a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p>Their intelligence often matches their parent breeds, so you know you’re going to get one smart puppy.</p>
+                  </h3>
+  
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="category-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/Dog13.webp" width="330" height="300" loading="lazy"
+                      alt="Dog Sumpplements" class="img-cover">
+                  </figure>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Frenchton</a>
+                    <br>
+                    <br>
+                    <br>
+                    <p>These adorable puppies are generally full of energy and extremely affectionate. Due to their friendly personalities and small-to-medium size</p>
+                    </h3>
+  
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="category-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/Dog14.webp" width="330" height="300" loading="lazy"
+                      alt="Dog Sumpplements" class="img-cover">
+                  </figure>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Havachon</a>
+                    <br>
+                    <p> Their teddy bear-like faces may woo you no matter how naughty they may get! In general, the mellow, go-with-the-flow Havanese personality paired with the adorable. </p>
+                  </h3>
+  
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="category-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/Dog15.webp" width="330" height="300" loading="lazy"
+                      alt="Dog Sumpplements" class="img-cover">
+                  </figure>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Mal-Shi</a>
+                    <br>
+                    <br>
+                    <p>A Malshi puppy’s coat can be wavy or straight but is always silky. They are low shedders and great for people who live in smaller spaces.</p>
+                  </h3>
+  
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="category-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/Dog16.webp" width="330" height="300" loading="lazy"
+                      alt="Dog Sumpplements" class="img-cover">
+                  </figure>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Malti-Pom</a>
+                    <br>
+                    <p>Featuring the fluffy coats of their parents, the Maltese side contributes a playful, gentle nature, and the Pomeranian side brings liveliness and an intelligent manner.</p>
+                  </h3>
+  
+                </div>
+              </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      
+      <!-- 
+        - #CATEGORY 3
+      -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">The Top Categories of </span>Classic Hound Dog Breeds
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog17.webp" width="330" height="300" loading="lazy" alt="Cat Food"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Basset Hound</a>
+                  <br>
+                  <p> These dogs may be stubborn, but they’re almost always charming, friendly, and laid back. Basset Hounds have sturdy, heavy bones, strong but short legs, and the strength and stamina of a much larger dog. </p>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog18.webp" width="330" height="300" loading="lazy" alt="Cat Toys"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">American English Coonhound</a>
+                  <br>
+                  <br>
+                  <br>
+                  <p> Though sweet as pets, Coonhounds are prized for their speed and endurance. When they’re at home, Coonhounds are mellow, but take pride in their work. </p>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog19.webp" width="330" height="300" loading="lazy" alt="Dog Food"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Beagle</a>
+                  <br>
+                  <br>
+                  <p>Unlike some hunting breeds, Beagles were developed to hunt in packs and generally enjoy the company of people, other dogs, and cats. Beagles do well when they have a job like hunting or canine competition. </p>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog20.webp" width="330" height="300" loading="lazy" alt="Dog Toys"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Bloodhound</a>
+                  <br>
+                  <p>These dogs are believed to have been descended from hounds kept at the Abbey of Saint-Hubert, Belgium, since the Middle Ages. Though relentless and stubborn in pursuit of game, the Bloodhound is docile and friendly. </p>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Dog21.webp" width="330" height="300" loading="lazy"
+                    alt="Dog Sumpplements" class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Black and Tan Coonhound</a>
+                  <br>
+                  <br>
+                  <p>These dogs hunt entirely by scent with their sensitive noses. While Black and Tan Coonhounds are athletic and tireless hunters, they can be lazy around the house and enjoy relaxing as much as work.</p>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <!-- 
+        - #BRAND
+      -->
+
+      <section class="section brand" aria-label="brand">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Popular</span> Brands
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/brand-1.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/brand-2.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/brand-3.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/brand-4.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/brand-5.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/11.png')">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Kitter</a>
+
+          <p class="footer-text">
+            If you have any question, please contact us at <a href="mailto:support@gmail.com"
+              class="link">support@gmail.com</a>
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+                30 Buttonwood St.Pataskala OH 43062
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+16234567891011" class="contact-link">(+1)-6234-56-789-1011</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Corporate</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Careers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQs</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Vendors</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Affiliate Program</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Online Store</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Track Order</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Grooming</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Positive Dog Training</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Veterinary Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Petco Insurance</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pet Adoption</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Resource Center</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 Made with ♥ by <a href="#" class="copyright-link">codewithsadee.</a>
+        </p>
+
+        <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method" class="img">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
